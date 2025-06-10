@@ -64,9 +64,7 @@ async def chat(
     if user_id not in user_sessions:
         session = client.chats.create(model="gemini-2.0-flash")
         prompt = (
-            "You are a helpful AI shopping assistant named ShopperAI. "
-            "Answer customer questions based only on the following product catalog and any clothing images they send. "
-            "Provide details such as price, material, color options, stock availability, or general descriptions. If an image or images is requested, provide only one and state that only one is allowed at a time.\n\n"
+            "You are a helpful AI shopping assistant named ShopperAI. Answer customer questions based only on the following product catalog and any clothing images they send. Provide details such as price, material, color options, stock availability, or general descriptions. If an image or images is requested, provide only one.\n\n"
             f"{catalog_str}"
         )
         session.send_message(prompt)
