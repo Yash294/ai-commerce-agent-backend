@@ -89,3 +89,9 @@ bash start.sh
 
 - This service is designed for demo purposes. It demonstrates core AI integration and API design but is not optimized for production scale.
 - Error handling and guards ensure robust behavior under common failure scenarios.
+---
+
+## 📦 Preset Data
+
+- The product catalog is defined in `product_catalog.json` and used as the basis for all AI responses.
+- Product images referenced in the catalog are stored in the `static/` folder (if applicable) and linked via image URLs.
