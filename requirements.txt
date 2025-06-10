@@ -3,3 +3,4 @@ uvicorn
 python-dotenv
 pillow
 google-genai
+python-multipart
